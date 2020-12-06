@@ -1,6 +1,6 @@
 ![comp](./data/info/readme/001.png)
 # EE542-Mechanisms-of-Action-MoA-Prediction
-[Mechanisms of Action (MoA) Prediction] (https://www.kaggle.com/c/lish-moa/overview) Competition repository
+[Mechanisms of Action (MoA) Prediction](https://www.kaggle.com/c/lish-moa/overview) Competition repository
 
 - result
 
@@ -12,24 +12,24 @@
 
 
 ## Basics
-Mechanism of Action (MoA) means a specific biochemical interaction for a drug to exert its pharmacological effect. ([Reference] (https://ja.wikipedia.org/wiki/mechanism of action))
+Mechanism of Action (MoA) means a specific biochemical interaction for a drug to exert its pharmacological effect. ([Reference](https://en.wikipedia.org/wiki/Mechanism_of_action#:~:text=In%20pharmacology%2C%20the%20term%20mechanism,as%20an%20enzyme%20or%20receptor.))
 
 ### info
-- [googledrive] (https://drive.google.com/drive/u/1/folders/1JGawvjsXcoTEVL_VHkRvE1J7-UclvA7u)
-- [issue board] (https://github.com/fkubota/kaggle-Mechanisms-of-Action-MoA-Prediction/projects/1)
+- [googledrive](https://drive.google.com/drive/u/1/folders/1JGawvjsXcoTEVL_VHkRvE1J7-UclvA7u)
+- [issue board](https://github.com/fkubota/kaggle-Mechanisms-of-Action-MoA-Prediction/projects/1)
 - Important person
 
 | name | detail |
 | --- | --- |
-| [mrbhbs] (https://www.kaggle.com/mrbhbs/discussion?sortBy=latestPost&group=commentsAndTopics&page=1&pageSize=20) | Host. Often seen in comments in discussions about domain knowledge. |
-| [Michael Maguire] (https://www.kaggle.com/thawatt/discussion?sortBy=latestPost&group=commentsAndTopics&page=1&pageSize=20) | A master who asks good questions to the host. |
+| [mrbhbs](https://www.kaggle.com/mrbhbs/discussion?sortBy=latestPost&group=commentsAndTopics&page=1&pageSize=20) | Host. Often seen in comments in discussions about domain knowledge. |
+| [Michael Maguire](https://www.kaggle.com/thawatt/discussion?sortBy=latestPost&group=commentsAndTopics&page=1&pageSize=20) | A master who asks good questions to the host. |
 
 ### Paper
 | No. | Status | Name | Detail | Date | Url |
 | --- | --- | --- | --- | --- | --- |
-01 | Todo | TabNet: Attentive Interpretable Tabular Learning | TabNet Original Paper | 2020 | [url] (https://arxiv.org/abs/1908.07442) |
+01 | Todo | TabNet: Attentive Interpretable Tabular Learning | TabNet Original Paper | 2020 | [url](https://arxiv.org/abs/1908.07442) |
 | 02 | Done | A novel method for classification of tabular data using convolutional neural networks | A TAC treatise that uses CNN for table data. |2020|[url] (https://www.biorxiv.org/content/10.1101/2020.05.02.074203v1.full) |
-02 | Todo | Focal Loss for Dense Object Detection | Original paper on focal loss | 2017 | [url] (https://arxiv.org/abs/1708.02002) |
+02 | Todo | Focal Loss for Dense Object Detection | Original paper on focal loss | 2017 | [url](https://arxiv.org/abs/1708.02002) |
 
 ### Overview (DeepL)
 Connectivity Map, a project within MIT and Harvard Broad Institute, Harvard Institute for Innovation Science (LISH), and NIH Common Funds Library of Integrated Network-Based Cellular Signatures (LINCS), promotes drug development through improved MoA prediction algorithms. We are presenting this challenge with the aim of moving forward.
@@ -104,11 +104,11 @@ sample_submission.csv --Correctly formatted submission file.
 
 ### 20201007
 --Today, I added input to my kaggle diary.
---I read this [EDA] (https://www.kaggle.com/isaienkov/mechanisms-of-action-moa-prediction-eda) notebook.
+--I read this [EDA](https://www.kaggle.com/isaienkov/mechanisms-of-action-moa-prediction-eda) notebook.
 
 ### 20201008
 
-- I saw the usual [Ikeike EDA] (https://www.kaggle.com/headsortails/explorations-of-action-moa-eda).
+- I saw the usual [Ikeike EDA](https://www.kaggle.com/headsortails/explorations-of-action-moa-eda).
     - Treatment features
 
         <img src='./data/info/readme/002.png' width='500'>
@@ -133,8 +133,8 @@ The team name is now ** May the CV be with you. **!
 
 
 ### 20201011
-- I learned a lot of domain knowledge from cool_rabbit. ([slack] (https://moagold.slack.com/archives/C01D1R2KCV6/p1602308954001100))
---[Experimental treatise] taught by cool_rabbit (https://www.cell.com/cell/fulltext/S0092-8674(17)31309-0?_returnURL=https%3A%2F%2Flinkinghub.elsevier. com% 2Fretrieve% 2Fpii% 2FS0092867417313090% 3Fshowall% 3Dtrue)
+- I learned a lot of domain knowledge from cool_rabbit. ([slack](https://moagold.slack.com/archives/C01D1R2KCV6/p1602308954001100))
+--[Experimental treatise] taught by cool_rabbit (https://www.cell.com/cell/fulltext/S0092-8674(17)31309-0?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0092867417313090%3Fshowall%3Dtrue)
 - cool_rabbit told me what the host wants to do. It was easier than I expected ...
 
     ```
