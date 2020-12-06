@@ -1,6 +1,5 @@
-# EE542_final
-![comp] (./data/info/readme/001.png)
-# kaggle-Mechanisms-of-Action-MoA-Prediction
+![comp](./data/info/readme/001.png)
+# EE542-Mechanisms-of-Action-MoA-Prediction
 [Mechanisms of Action (MoA) Prediction] (https://www.kaggle.com/c/lish-moa/overview) Competition repository
 
 - result
