@@ -94,17 +94,17 @@ sample_submission.csv --Correctly formatted submission file.
 
 ## Log
 ### 20201006
---join
---data download
---data size list
+- join
+- data download
+- data size list
 
 
---nb001
-    --EDA of input data was performed
+- nb001
+    - EDA of input data was performed
 
 ### 20201007
---Today, I added input to my kaggle diary.
---I read this [EDA](https://www.kaggle.com/isaienkov/mechanisms-of-action-moa-prediction-eda) notebook.
+- Today, I added input to my kaggle diary.
+- I read this [EDA](https://www.kaggle.com/isaienkov/mechanisms-of-action-moa-prediction-eda) notebook.
 
 ### 20201008
 
@@ -134,7 +134,7 @@ The team name is now ** May the CV be with you. **!
 
 ### 20201011
 - I learned a lot of domain knowledge from cool_rabbit. ([slack](https://moagold.slack.com/archives/C01D1R2KCV6/p1602308954001100))
---[Experimental treatise] taught by cool_rabbit (https://www.cell.com/cell/fulltext/S0092-8674(17)31309-0?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0092867417313090%3Fshowall%3Dtrue)
+- [Experimental treatise](https://www.cell.com/cell/fulltext/S0092-8674(17)31309-0_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0092867417313090%3Fshowall%3Dtrue)
 - cool_rabbit told me what the host wants to do. It was easier than I expected ...
 
     ```
@@ -142,11 +142,11 @@ The team name is now ** May the CV be with you. **!
     ```
 - Slide summarizes the main knowledge that I got from cool_rabbit
     -[googleslide] (https://docs.google.com/presentation/d/1TyYxMozqOpxq0v212EIk8PLh53fdQ84AEM41otwAHvQ/edit#slide=id.g9c253d643f_0_348)
---Let's base it on the [public notebook] (https://www.kaggle.com/nicohrubec/pytorch-multilabel-neural-network) referenced by Hirayuki and NicoNeco.
+- Let's base it on the [public notebook] (https://www.kaggle.com/nicohrubec/pytorch-multilabel-neural-network) referenced by Hirayuki and NicoNeco.
 
 ### 20201012
 - I looked at the [public notebook] (https://www.kaggle.com/nicohrubec/pytorch-multilabel-neural-network/data?select=iterative-stratification-master) that I want to base the baseline on.
-    ― It's pretty simple and easy to study.
+	- It's pretty simple and easy to study.
 
 - Discussed public and private with members. It is summarized below in [Mind Map] (https://drive.mindmup.com/map/1VMY-xOHTmjxZNqZdbZeo1aQIs_2-DPcL).
     - local test = public test. Really？
@@ -308,7 +308,7 @@ The team name is now ** May the CV be with you. **!
     ```
 
 ### 20201017
---Announcement from cool_rabbit
+- Announcement from cool_rabbit
     
     ```
     The following are some sig_ids in the group that have high cell killing ability (c with a value close to -10).
@@ -475,33 +475,33 @@ The team name is now ** May the CV be with you. **!
     The second figure is enlarged.
     - The difference in color is the difference in how many of the 3982 public samples are 1. There are five of 1,2,3,4,5.
     ― The horizontal axis changes a certain value from low to high. The value is calculated at regular intervals in log space. Therefore, the scale on the horizontal axis is also logarithmic.
-    ――The vertical axis shows log loss.
+    ― The vertical axis shows log loss.
     As a result, it was found that the best score would be obtained if 5 out of 3982 were subs with a value of about 0.0013 if 1 and about 0.00024 if 1 was 1.
 
-        <img src ='./ data / info / readme / 024.png' width = '400'>  
+        <img src ='./data/info/readme/024.png' width = '400'>  
 
-        <img src ='./ data / info / readme / 025.png' width = '400'>  
+        <img src ='./data/info/readme/025.png' width = '400'>  
 
 
---kagglenb003
-    --Use the nb002 model
-    --Apply nb007 post-processing
-    --Submit two targets that can only be 1 once, filling in 0.0005
-    --result
-        --Bimyo
-        ――In the first place, the predicted value of the target was small, close to 0.0005, so there was not much change.
-        --cv: 0.015140
-        --sub (no post-processing): 0.01910
-        --sub (post-processing ant): 0.01909
+- kagglenb003
+    - Use the nb002 model
+    - Apply nb007 post-processing
+    - Submit two targets that can only be 1 once, filling in 0.0005
+    - result
+        - Bimyo
+        - In the first place, the predicted value of the target was small, close to 0.0005, so there was not much change.
+        - cv: 0.015140
+        - sub (no post-processing): 0.01910
+        - sub (post-processing ant): 0.01909
 
 ### 20201023
---[discussion] about const padding
-    --Since there is only one sample where `atp-sensitive_potassium_channel_antagonist` and` erbb2_inhibitor` are 1, the strategy is to fill it with a constant.
-    --For 0 padding: 0.2055
-    --0.000012 Filling: 0.02004
+- [discussion] about const padding
+    - Since there is only one sample where `atp-sensitive_potassium_channel_antagonist` and` erbb2_inhibitor` are 1, the strategy is to fill it with a constant.
+    - For 0 padding: 0.2055
+    - 0.000012 Filling: 0.02004
 
 ### 20201024
---nb008
+- nb008
     --- Percentage (%) ranking that includes less than 9.8
 
         <img src ='./ data / info / readme / 026.png' width = '300'>  
