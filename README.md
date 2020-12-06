@@ -1,5 +1,5 @@
 # EE542_final
-! [comp] (./data/info/readme/001.png)
+![comp] (./data/info/readme/001.png)
 # kaggle-Mechanisms-of-Action-MoA-Prediction
 [Mechanisms of Action (MoA) Prediction] (https://www.kaggle.com/c/lish-moa/overview) Competition repository
 
@@ -10,11 +10,6 @@
     --private: 0.01609
 
     --rank: 39/4373
-
-Top 1% !!!!    
-Mostly thanks to my friends! !! !!
-
-<img src ='./ data / info / readme / 069.png' width = '800'>  
 
 
 ## Basics
@@ -34,7 +29,7 @@ Mechanism of Action (MoA) means a specific biochemical interaction for a drug to
 | No. | Status | Name | Detail | Date | Url |
 | --- | --- | --- | --- | --- | --- |
 01 | Todo | TabNet: Attentive Interpretable Tabular Learning | TabNet Original Paper | 2020 | [url] (https://arxiv.org/abs/1908.07442) |
-| 02 | Done | A novel method for classification of tabular data using convolutional neural networks | A TAC treatise that uses CNN for table data. 2020 | [url] (https://www.biorxiv.org/content/10.1101/2020.05.02.074203v1.full) |
+| 02 | Done | A novel method for classification of tabular data using convolutional neural networks | A TAC treatise that uses CNN for table data. |2020|[url] (https://www.biorxiv.org/content/10.1101/2020.05.02.074203v1.full) |
 02 | Todo | Focal Loss for Dense Object Detection | Original paper on focal loss | 2017 | [url] (https://arxiv.org/abs/1708.02002) |
 
 ### Overview (DeepL)
@@ -93,8 +88,8 @@ sample_submission.csv --Correctly formatted submission file.
 | cp_type | Indicates whether it was treated with a compound or a controlled perturbation. It takes a binary value of cp_vehicl or cp_ctrl. Control perturbations (cp_ctrl) do not have MoA. |
 | cp_time | Processing time. It takes three values ​​of 24, 48 and 72. |
 | cp_dose | Dose. Two types, D1 and D2 (high, low). |
-| g-[0, 771] | signify gene expression data. mRNA data. |
-| c-[0, 99] | signify cell viability data. Represents cell viability. |
+| g-[0,771] | signify gene expression data. mRNA data. |
+| c-[0,99] | signify cell viability data. Represents cell viability. |
 
 ## features
 
@@ -113,138 +108,140 @@ sample_submission.csv --Correctly formatted submission file.
 --I read this [EDA] (https://www.kaggle.com/isaienkov/mechanisms-of-action-moa-prediction-eda) notebook.
 
 ### 20201008
---I saw the usual [Ikeike EDA] (https://www.kaggle.com/headsortails/explorations-of-action-moa-eda) of Mr. Galaxy.
-    --Treatment features
 
-        <img src ='./ data / info / readme / 002.png' width = '500'>
+- I saw the usual [Ikeike EDA] (https://www.kaggle.com/headsortails/explorations-of-action-moa-eda).
+    - Treatment features
+
+        <img src='./data/info/readme/002.png' width='500'>
     
-    --Target
-        --Number of MoA active at the same time
+    - Target
+        - Number of MoA active at the same time
 
-        <img src ='./ data / info / readme / 003.png' width = '500'>
+        <img src='./data/info/readme/003.png' width='500'>
         
-    --Number of active classes in each class (n_sample = 23,814)
-        --Up to 800 or more
-        --Minimum 1
+    - Number of active classes in each class (n_sample = 23,814)
+        - Up to 800 or more
+        - Minimum 1
 
-        <img src ='./ data / info / readme / 004.png' width = '500'>
+        <img src='./data/info/readme/004.png' width='500'>
+
 
 ### 20201010
 #### The day the team merged! !!
 The team name is now ** May the CV be with you. **!
 
-<img src ='./ data / info / readme / 005.png' width = '1000'>
+<img src ='./data/info/readme/005.png' width = '1000'>
 
 
 ### 20201011
---I learned a lot of domain knowledge from cool_rabbit. ([slack] (https://moagold.slack.com/archives/C01D1R2KCV6/p1602308954001100))
+- I learned a lot of domain knowledge from cool_rabbit. ([slack] (https://moagold.slack.com/archives/C01D1R2KCV6/p1602308954001100))
 --[Experimental treatise] taught by cool_rabbit (https://www.cell.com/cell/fulltext/S0092-8674(17)31309-0?_returnURL=https%3A%2F%2Flinkinghub.elsevier. com% 2Fretrieve% 2Fpii% 2FS0092867417313090% 3Fshowall% 3Dtrue)
---cool_rabbit told me what the host wants to do. It was easier than I expected ...
+- cool_rabbit told me what the host wants to do. It was easier than I expected ...
 
-    `` ```
+    ```
     There are many future drug candidates (ids) developed by the host, and we want to know how many of these 207 existing drugs have the function.
-    `` ```
---Slide summarizes the main knowledge that I got from cool_rabbit
+    ```
+- Slide summarizes the main knowledge that I got from cool_rabbit
     -[googleslide] (https://docs.google.com/presentation/d/1TyYxMozqOpxq0v212EIk8PLh53fdQ84AEM41otwAHvQ/edit#slide=id.g9c253d643f_0_348)
 --Let's base it on the [public notebook] (https://www.kaggle.com/nicohrubec/pytorch-multilabel-neural-network) referenced by Hirayuki and NicoNeco.
 
 ### 20201012
---I looked at the [public notebook] (https://www.kaggle.com/nicohrubec/pytorch-multilabel-neural-network/data?select=iterative-stratification-master) that I want to base the baseline on.
-    ――It's pretty simple and easy to study.
+- I looked at the [public notebook] (https://www.kaggle.com/nicohrubec/pytorch-multilabel-neural-network/data?select=iterative-stratification-master) that I want to base the baseline on.
+    ― It's pretty simple and easy to study.
 
---Discussed public and private with members. It is summarized below in [Mind Map] (https://drive.mindmup.com/map/1VMY-xOHTmjxZNqZdbZeo1aQIs_2-DPcL).
-    --local test = like public test ... Really?
+- Discussed public and private with members. It is summarized below in [Mind Map] (https://drive.mindmup.com/map/1VMY-xOHTmjxZNqZdbZeo1aQIs_2-DPcL).
+    - local test = public test. Really？
 
-    <img src ='./ data / info / readme / 006.png' width = '1000'>
+    <img src='./data/info/readme/006.png' width='1000'>
 
---Discussed with TASSAN and Nikoneko. The idea was that when using nonscored, you should do the following:
+- Discussed with TASSAN and Nikoneko. The idea was that when using nonscored, you should do the following:
 
-    <img src ='./ data / info / readme / 007.png' width = '500'>
+    <img src ='./data/info/readme/007.png' width='500'>
 
 ### 20201013
---The Multilabel Stratified KFold taught by Mr. Hira is easy to overfit [Discussion] (https://www.kaggle.com/c/lish-moa/discussion/181340)
+- The Multilabel Stratified KFold taught by Mr. Hira is easy to overfit [Discussion] (https://www.kaggle.com/c/lish-moa/discussion/181340)
 
---domain [discussion] that seems to accumulate knowledge (https://www.kaggle.com/c/lish-moa/discussion/184005)
+- domain [discussion] that seems to accumulate knowledge (https://www.kaggle.com/c/lish-moa/discussion/184005)
 
-    --PGE2 and LTB4 are molecules (any of the targets), and CREB corresponds to one of g-xxx.
-    --There is a circuit that runs from ATP to CREB
-    --A gene is expressed when it reaches CREB
-    --The administration of the drug can promote or inhibit this circuit.
-    --PGE2 reacts to EP2? Then, the gene expression of CREB is promoted.
-    --Conversely, when LTB4 reacts with BLT1, gene expression is suppressed because it inhibits the circuit.
-    ――In other words, by observing the expression of genes such as CREB, it is possible to jointly understand which of PGE2 and LTB4 worked.
+    - PGE2 and LTB4 are molecules (any of the targets), and CREB corresponds to one of g-xxx.
+    - There is a circuit that runs from ATP to CREB
+    - A gene is expressed when it reaches CREB
+    - The administration of the drug can promote or inhibit this circuit.
+    - PGE2 reacts to EP2? Then, the gene expression of CREB is promoted.
+    - Conversely, when LTB4 reacts with BLT1, gene expression is suppressed because it inhibits the circuit.   
+    - In other words, by observing the expression of genes such as CREB, it is possible to jointly understand which of PGE2 and LTB4 worked.
 
-    <img src ='./ data / info / readme / 008.png' width = '500'>
+    <img src ='./data/info/readme/008.png' width='500'>
 
-    --About cp_time
-        --After 72 hours, the drug may lose its effect. That is, it may be indistinguishable from a control.
-    --The test data you have is equal to the public dataset.
-        --The private dataset is completely unknown.
+    - About cp_time
+        - After 72 hours, the drug may lose its effect. That is, it may be indistinguishable from a control.
+    - The test data you have is equal to the public dataset.
+        - The private dataset is completely unknown.
 
---It seems that quantile normalization is not the only preprocessing applied to data. ([discussion] (https://www.kaggle.com/c/lish-moa/discussion/184005#1034211))
+- It seems that quantile normalization is not the only preprocessing applied to data. ([discussion] (https://www.kaggle.com/c/lish-moa/discussion/184005#1034211))
 
---Question to cool_rabbit (about controls)
-    -(fkubota) ctl_vehicle recognizes that no drug is being administered, is that correct?
-    -(cool_rabbit) It seems that you are administering a drug solution called DMSO (which is considered harmless to cells if the concentration is low).
-    -(fkubota) DMSO should have 6 patterns (time3 pattern x dose2 pattern)?
-    -(cool_rabbit) There are probably two reasons,
-        ――Even if the amount and time are the same, there are variations every time you experiment, so you need to do it multiple times.
-        -When experimenting with real drug candidates, you need to put the controls on the same plate at the same time
+- Question to cool_rabbit (about controls)
+    - (fkubota) ctl_vehicle recognizes that no drug is being administered, is that correct?
+    - (cool_rabbit) It seems that you are administering a drug solution called DMSO (which is considered harmless to cells if the concentration is low).
+    - (fkubota) DMSO should have 6 patterns (time3 pattern x dose2 pattern)?
+    - (cool_rabbit) There are probably two reasons,
+        - Even if the amount and time are the same, there are variations every time you experiment, so you need to do it multiple times.
+        - When experimenting with real drug candidates, you need to put the controls on the same plate at the same time
         Regarding the latter, for example, if you do a treatment group on a sunny day and a control group on a rainy day, the influence of unknown weather may appear in the experiment. So you should always put the controls in the same plate on the same day. However, it is not necessary to prepare as many controls as the number of drugs, so for example, it is an image of experimenting with 10 types of drugs and 1 DMSO in 11 different holes in the same plate at the same time.
 
 ### 20201014
--[This discussion] (https://www.kaggle.com/c/lish-moa/discussion/184005#1034211) mentions quantile normalization.
-    --If qn, it will be a unique value. But not.
-    --The host [comments] (https://www.kaggle.com/c/lish-moa/discussion/180390#1000307) says it is qn.
---The sklearn metric log_loss is designed to give an error if all (target) columns contain 0s.
-    ――It seems that you should define it yourself as follows.
-        `` `python
-        def log_loss_metric (y_true, y_pred):
-            loss = --np.mean (np.mean (y_true * np.log (y_pred) + (1 --y_true) * np.log (1 --y_pred), axis = 1))
-            return loss
-        `` ```
-    
-――I was doing EDA.
-    ――The maximum and minimum values ​​are normalized to -10 ~ 10, but it seems that they are saturated instead of min_max_scaler.  
+- [This discussion] (https://www.kaggle.com/c/lish-moa/discussion/184005#1034211) mentions quantile normalization.
+    - If qn, it will be a unique value. But not.
+    - The host [comments] (https://www.kaggle.com/c/lish-moa/discussion/180390#1000307) says it is qn.
 
-    <img src ='./ data / info / readme / 009.png' width = '500'>  
+- The sklearn metric log_loss is designed to give an error if all (target) columns contain 0s.
+    - It seems that you should define it yourself as follows.
+        ```python
+        def log_loss_metric(y_true, y_pred):
+            loss = - np.mean(np.mean(y_true * np.log(y_pred) + (1 - y_true) * np.log(1 - y_pred), axis = 1))
+            return loss
+        ```    
+- I was doing EDA.
+    - The maximum and minimum values ​​are normalized to -10 ~ 10, but it seems that they are saturated instead of min_max_scaler.  
+
+    <img src ='./data/info/readme/009.png' width = '500'>  
 
     Isn't such an idea interesting?  
-    <img src ='./ data / info / readme / 010.jpg' width = '300'>  
+    <img src ='./data/info/readme/010.jpg' width = '300'>  
 
 ### 20201015
---cool_rabbit's idea (how to avoid leak)
-    --Group by the total number of targets
+- cool_rabbit's idea (how to avoid leak)
+    - Group by the total number of targets
 
-――It seems that the above method can only be divided into about 12 types.
-    --And imbalanced ...
+- It seems that the above method can only be divided into about 12 types.
+    - And imbalanced ...
 
-――Let's sort out the problems.
-    ――The following figures are all different drugs, but if it is sum, it will be degenerated. What you can see visually should be a unique value ...
+- Let's sort out the problems.
+    - The following figures are all different drugs, but if it is sum, it will be degenerated. What you can see visually should be a unique value ...
 
-    <img src ='./ data / info / readme / 014.jpg' width = '300'>  
+    <img src ='./data/info/readme/014.jpg' width = '300'>  
 
 
---I came up with a breakthrough! !!
+- I came up with a breakthrough! !!
 
     | 1 | 2 | 3 |
     | --- | --- | --- |
-    | <img src ='./ data / info / readme / 011.png' width = '400'> | <img src ='./ data / info / readme / 012.png' width = '400'> | < img src ='./ data / info / readme / 013.png' width = '400'> |
+    | <img src ='./data/info/readme/011.png' width='400'> | <img src ='./data/info/readme/012.png' width = '400'> | <img src ='./data/info/readme/013.png' width='400'> |
 
---nb003
-    --Create a notebook by referring to the above idea.
-    --Expanded to teammates.
-    ――It doesn't seem to be wrong.
-    --There were 696 groups formed. However, there is also one group, one sig_id. You might want to try EDA a little more.
-    --analysis
-        --Value_counts was performed in the group column focusing only on trt_cp. (Group = 1 becomes all_target = 0)
-            ―― 1 is still many.
+- nb003
+    - Create a notebook by referring to the above idea.
+    - Expanded to teammates.
+    - It doesn't seem to be wrong.
+    - There were 696 groups formed. However, there is also one group, one sig_id. You might want to try EDA a little more.
+    - analysis
+        - Value_counts was performed in the group column focusing only on trt_cp. (Group = 1 becomes all_target = 0)
+            - 1 is still many.
 
-            <img src ='./ data / info / readme / 015.png' width = '300'>  
+            <img src ='./data/info/readme/015.png' width = '300'>  
 
---Opinion of TASSAN. That's true ...
+- Opinion of TASSAN. That's true ...
 
-    `` ```
+    ```
     If a certain target is aggregated into one fold, the following problems will occur.
     Consider the situation where 2fold division, target1 exists only in fold1 and test is inferred.
     1. 1. Predict target1 of test when fold1 is train and fold2 is valid
@@ -258,10 +255,11 @@ The team name is now ** May the CV be with you. **!
     It is possible that the prediction accuracy of target1 will deteriorate because 2 will be mixed when the predicted value becomes almost 0 at the time of submit.
     (In this case, it is easy to deal with it, and it is conceivable to use only the inference of the model created in 1 to predict target1 of test.)
     The above is the concrete content that you should be careful (it was completely insufficient explanation)
-    `` ```
+    ```
 
-――I thought about it from the perspective of the host.
-    `` ```
+- I thought about it from the perspective of the host.
+    
+    ```
     I thought about it with the feelings of the host side,
     ABC = 100
     ABC = 010
@@ -283,11 +281,12 @@ The team name is now ** May the CV be with you. **!
     ABC = 110
     I thought that I should make a model that can predict.
     For your reference.
-    `` ```
-    --Agreement from TASSAN :)
+    ```
+    - Agreement from TASSAN :)
 
---Arrangement of the current situation
-    `` ```
+- Arrangement of the current situation
+    
+    ```
     I've been confused in various ways, so let me sort it out.
     Under this idea I commented on
     So far, 696 grouping seems to be the best, even if there are the following issues? Is it okay to recognize that?
@@ -307,11 +306,12 @@ The team name is now ** May the CV be with you. **!
     However, I think the ideological part is still controversial.
     It doesn't matter if you agree or disagree, so I would like to agree with you.
     I look forward to working with you.
-    `` ```
+    ```
 
 ### 20201017
 --Announcement from cool_rabbit
-    `` ```
+    
+    ```
     The following are some sig_ids in the group that have high cell killing ability (c with a value close to -10).
     ・ G1: No MoA
     ・ G10: dna_inhibitor
@@ -337,132 +337,131 @@ The team name is now ** May the CV be with you. **!
     ・ G634: na_k-atpase_inhibitor
     ・ G637: flt3_inhibitor + kit_inhibitor + pdgfr_inhibitor + vegfr_inhibitor + ret_inhibitor
     On the contrary, the other groups had weak to moderate cell killing ability.
-    `` ```
+    ```
 
---Important [discussion] to gain domain knowledge (https://www.kaggle.com/c/lish-moa/discussion/191487)
-    ――I'm asking a lot of questions.
+- Important [discussion] to gain domain knowledge (https://www.kaggle.com/c/lish-moa/discussion/191487)
+    - I'm asking a lot of questions.
 
 
 ### 20201018
-――I have read 10 Devil's Blades.
-――It was interesting, so I think it's good.
+- I have read 10 Devil's Blades.
+- It was interesting, so I think it's good.
 
 
 ### 20201019
---nb002
-    --For the time being, I wrote the code in 5-fold.
-    ――However, there is a drug leak because it was only divided into 5 by KFold.
-    --result
-        --cv: 0.015140
-        --loss
-
-        <img src ='./ data / info / readme / 016.png' width = '400'>  
+- nb002
+    - For the time being, I wrote the code in 5-fold.
+    - However, there is a drug leak because it was only divided into 5 by KFold.
+    - result
+        - cv: 0.015140
+        - loss
+        <img src ='./data/info/readme/016.png' width = '400'>  
 
 ### 20201020
---In the latter half of nb002, I saw the behavior of log_loss, but it's pretty good. I have to think about post-processing.
+- In the latter half of nb002, I saw the behavior of log_loss, but it's pretty good. I have to think about post-processing.
 
-    <img src ='./ data / info / readme / 017.png' width = '400'>  
+    <img src ='./data/info/readme/017.png' width = '400'>  
 
---kagglenb001
-    --Use the nb002 model
-    --result
-        --cv: 0.015140
-        --sub: 0.01910
+- kagglenb001
+    - Use the nb002 model
+    - result
+        - cv: 0.015140
+        - sub: 0.01910
 
---nb004
-    --Create a group using the target information
-    --In nb003, it was grouped into 696 pieces.
-    --There are quite a lot of groups with all_target = 0, so I'll try to break them down.
-    --Created a function called get_696_strategy_fold (group, n_splits)
-    --get_696_strategy_fold
-        --Separate group_0 and group_not0
-        --gourp_0 ​​is 5fold, group_not0 is group5fold
-        --Combine fold information
+- nb004
+    - Create a group using the target information
+    - In nb003, it was grouped into 696 pieces.
+    - There are quite a lot of groups with all_target = 0, so I'll try to break them down.
+    - Created a function called get_696_strategy_fold (group, n_splits)
+    - get_696_strategy_fold
+        - Separate group_0 and group_not0
+        - gourp_0 ​​is 5fold, group_not0 is group5fold
+        - Combine fold information
 
 
---nb005
-    --I used get_696_strategy_fold created with nb004
-    --result
-        --n_splits = 5
-        --cv: 0.024645
+- nb005
+    - I used get_696_strategy_fold created with nb004
+    - result
+        - n_splits = 5
+        - cv: 0.024645
 
 ### 20201021
---kagglenb002
-        --Use the model created with nb005
-        --result
-            --cv: 0.024645
-            --sub: 0.02057
+- kagglenb002
+	- Use the model created with nb005
+	- result
+        - cv: 0.024645
+        - sub: 0.02057
 
---nb006
-    --The cv of nb005 was not good, so analyze it.
-    --Probably, there is a distribution difference of target for each fold.
-    --Consider a way to make it constant.
+- nb006
+    - The cv of nb005 was not good, so analyze it.
+    - Probably, there is a distribution difference of target for each fold.
+    - Consider a way to make it constant.
     
-    --Plot the number of times any target becomes 1 for each fold
+    - Plot the number of times any target becomes 1 for each fold
 
-        <img src ='./ data / info / readme / 018.png' width = '1000'>  
+        <img src ='./data/info/readme/018.png' width = '1000'>  
 
-    --Binary the above figure
+    - Binary the above figure
 
-        <img src ='./ data / info / readme / 019.png' width = '1000'>  
+        <img src ='./data/info/readme/019.png' width = '1000'>  
 
-    --Counted the number of times each target appears in the group
-        --Sad news: Of the 206 targets, `88` was found to belong to one group.
+    - Counted the number of times each target appears in the group
+        - Sad news: Of the 206 targets, `88` was found to belong to one group.
 
-    -[This discussion] (https://www.kaggle.com/c/lish-moa/discussion/191857) tells us that train and test may contain the same drug.
-        --Example
-            --Only one sample belongs to group330.
-            ――You should measure at least 6 times per drug, so where are the remaining 5 times?
-            --Excluded due to quality issues
-            --All the rest go to test
-            --Both 1 and 2
-        ――In other words, do you have to worry about drug leaks?
-            ――As a result of the discussion, it seems to be true.
+    - [This discussion] (https://www.kaggle.com/c/lish-moa/discussion/191857) tells us that train and test may contain the same drug.
+    - Example
+    	- Only one sample belongs to group330.
+    	- You should measure at least 6 times per drug, so where are the remaining 5 times?
+      - Excluded due to quality issues
+      - All the rest go to test
+         - Both 1 and 2
+      - In other words, do you have to worry about drug leaks?
+         - As a result of the discussion, it seems to be true.
         
-    --done kfold
-        --Calculated the number of times any target becomes 1 for each fold　
-        --Visualization of the part where the total number of targets is 0 for each fold
-            ――It's not worse than I expected, but I want to eliminate the black part
+    - done kfold
+        - Calculated the number of times any target becomes 1 for each fold　
+        - Visualization of the part where the total number of targets is 0 for each fold
+            - It's not worse than I expected, but I want to eliminate the black part
 
-            <img src ='./ data / info / readme / 020.png' width = '1000'>  
+            <img src ='./data/info/readme/020.png' width = '1000'>  
 
-    --Multi-stratified-kfold was done
-        --Visualization of the part where the total number of targets is 0 for each fold
-            ――It feels pretty good
+    - Multi-stratified-kfold was done
+        - Visualization of the part where the total number of targets is 0 for each fold
+        	- It feels pretty good
 
-            <img src ='./ data / info / readme / 021.png' width = '1000'>  
+            <img src ='./data/info/readme/021.png' width = '1000'>  
         
-        ――The black part remains, but there is only one sample in the first place
-            --apt-sensitive_potassium_channel_antagonist
-            --erbb2_inhibitor  
+        - The black part remains, but there is only one sample in the first place
+            - apt-sensitive_potassium_channel_antagonist
+            - erbb2_inhibitor  
 
-            <img src ='./ data / info / readme / 022.png' width = '400'>  
+            <img src ='./data/info/readme/022.png' width = '400'>  
 
 
 ### 20201022
---Summary of what the number one person has done [Discussion] (https://www.kaggle.com/c/lish-moa/discussion/183377)
-    ――I want to try everything that is written individually.
---General-purpose countermeasures when the LB and CV divergence is large, as taught by Mr. Hira [discussion] (https://www.kaggle.com/c/lish-moa/discussion/190949)
+- Summary of what the number one person has done [Discussion] (https://www.kaggle.com/c/lish-moa/discussion/183377)
+    - I want to try everything that is written individually.
+- General-purpose countermeasures when the LB and CV divergence is large, as taught by Mr. Hira [discussion] (https://www.kaggle.com/c/lish-moa/discussion/190949)
 
---TASSAN taught me [disucussion] (https://www.kaggle.com/c/lish-moa/discussion/191135)
-    `` ```
+- TASSAN taught me [disucussion] (https://www.kaggle.com/c/lish-moa/discussion/191135)
+    ```
     This is atp-sensitive_potassium_channel_antagonist and erbb2_inhibitor
     About (both have only one line with target = 1)
     We compared the public score when all 0s were filled and when 0.000012 was filled.
     It's a discussion, but the difference is quite wide ...
-    `` ```
+    ```
 
---TASSAN analysis
-    ――For some reason, only 48D1 has a large value.
+- TASSAN analysis
+    - For some reason, only 48D1 has a large value.
 
-        <img src ='./ data / info / readme / 023.png' width = '400'>  
+        <img src ='./data/info/readme/023.png' width = '400'>  
 
 
---nb007
+- nb007
     [Two points]
 
-    --There is data that a target has only one number of times to become 1 ---> It seems that it can not be used for learning ---> When sub, it is better to consider submitting the target column as a constant (for example, 0) Good.
-    --Sensitivity of logloss-> For example, when only 3 out of 3982 have 1 columns, if you fill with 0 and 0.001, the loss value will change about 4 times. (0.026021 and 0.006204 respectively)
+    - There is data that a target has only one number of times to become 1 ---> It seems that it can not be used for learning ---> When sub, it is better to consider submitting the target column as a constant (for example, 0) Good.
+    - Sensitivity of logloss-> For example, when only 3 out of 3982 have 1 columns, if you fill with 0 and 0.001, the loss value will change about 4 times. (0.026021 and 0.006204 respectively)
 
     Taking these into consideration, I tried to estimate an appropriate value when filling with constants.
     The fact that there is only one in the train means that the remaining five are in the test.
@@ -475,8 +474,8 @@ The team name is now ** May the CV be with you. **!
     The simplest example is to fill it with 0s. It can be 0.1 or 1.
     The first figure below shows this calculated for every pattern.
     The second figure is enlarged.
-    --The difference in color is the difference in how many of the 3982 public samples are 1. There are five of 1,2,3,4,5.
-    ――The horizontal axis changes a certain value from low to high. The value is calculated at regular intervals in log space. Therefore, the scale on the horizontal axis is also logarithmic.
+    - The difference in color is the difference in how many of the 3982 public samples are 1. There are five of 1,2,3,4,5.
+    ― The horizontal axis changes a certain value from low to high. The value is calculated at regular intervals in log space. Therefore, the scale on the horizontal axis is also logarithmic.
     ――The vertical axis shows log loss.
     As a result, it was found that the best score would be obtained if 5 out of 3982 were subs with a value of about 0.0013 if 1 and about 0.00024 if 1 was 1.
 
