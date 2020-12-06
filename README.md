@@ -3,22 +3,22 @@
 # kaggle-Mechanisms-of-Action-MoA-Prediction
 [Mechanisms of Action (MoA) Prediction] (https://www.kaggle.com/c/lish-moa/overview) Competition repository
 
---result
+- result
 
-    --public: 0.01822
+   - public: 0.01822
 
-    --private: 0.01609
+   - private: 0.01609
 
-    --rank: 39/4373
+   - rank: 39/4373
 
 
 ## Basics
 Mechanism of Action (MoA) means a specific biochemical interaction for a drug to exert its pharmacological effect. ([Reference] (https://ja.wikipedia.org/wiki/mechanism of action))
 
 ### info
--[googledrive] (https://drive.google.com/drive/u/1/folders/1JGawvjsXcoTEVL_VHkRvE1J7-UclvA7u)
--[issue board] (https://github.com/fkubota/kaggle-Mechanisms-of-Action-MoA-Prediction/projects/1)
---Important person
+- [googledrive] (https://drive.google.com/drive/u/1/folders/1JGawvjsXcoTEVL_VHkRvE1J7-UclvA7u)
+- [issue board] (https://github.com/fkubota/kaggle-Mechanisms-of-Action-MoA-Prediction/projects/1)
+- Important person
 
 | name | detail |
 | --- | --- |
