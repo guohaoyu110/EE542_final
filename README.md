@@ -34,35 +34,35 @@ For feature engineering, besides basic feature statistics, we use RankGauss + PC
 
 ### Raw Data: 
 
-        <img src = './picture/002.png'>
+<img src = './picture/002.png'>
 
 
 ### Basic Feature Statistics: 
 
 cp_type:
 
-        <img src = './picture/003.png'>
+<img src = './picture/003.png'>
 
 
 
 gene data:
 
-        <img src = './picture/004.png'>
+<img src = './picture/004.png'>
 
 
 cell viability data:
 
-        <img src = './picture/005.png'>
+<img src = './picture/005.png'>
 
 
 Number of target classes that each sample has:
 
-        <img src = './picture/006.png'>
+<img src = './picture/006.png'>
 
 
 10 largest number of labels in the scored targets:
 
-        <img src = './picture/007.png'>
+<img src = './picture/007.png'>
 
 
 
