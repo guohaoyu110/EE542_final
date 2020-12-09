@@ -1,10 +1,21 @@
 # EE542_final
 
+![comp](./data/info/readme/001.png)
+# EE542-Mechanisms-of-Action-MoA-Prediction
+[Mechanisms of Action (MoA) Prediction](https://www.kaggle.com/c/lish-moa/overview) Competition repository
+
+- result
+
+   - public: 0.01822
+
+   - private: 0.01609
+
+   - rank: 39/4373
+
 ## Usage
 
 Final project for EE542
 
-Our project is based on one of the Kaggle competition  ————————  MoA prediction
 
 To run our scripts, several packages need to be installed first. 
 
