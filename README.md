@@ -27,7 +27,7 @@ pytorch16gpu/torch-1.6.0cu101-cp37-cp37m-linux_x86_64.whl
 <img src = './picture/001.png'>
 
 
-1) Feature Engineering
+## 1) Feature Engineering
 
 For feature engineering, besides basic feature statistics, we use RankGauss + PCA + VarianceThreshold. 
 
@@ -63,6 +63,59 @@ Number of target classes that each sample has:
 10 largest number of labels in the scored targets:
 
 <img src = './picture/007.png'>
+
+
+RankGauss: (Before and After)
+
+<img src = './picture/008.png'>
+
+<img src = './picture/009.png'>
+
+
+We then set number of genes to be 600 and cells to be 50 after PCA. 
+
+We set Variance Threshold to be 0.8.
+
+
+
+
+
+## 2) Model ()
+
+
+### Model 1
+
+
+Our structure of model 1 is as follows:
+
+<img src = './picture/010.png'>
+
+
+
+
+Results:
+
+<img src = './picture/011.png'>
+
+
+
+### Model 2
+
+
+Our structure of Model 2 is as follows:
+
+<img src = './picture/012.png'>
+
+
+
+Results:
+
+<img src = './picture/013.png'>
+
+
+
+
+
 
 
 
