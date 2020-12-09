@@ -1,6 +1,6 @@
 # EE542_final
 
-## Overview and Usage:
+## Usage
 
 Final project for EE542
 
@@ -22,7 +22,11 @@ pytorch16gpu/torch-1.6.0cu101-cp37-cp37m-linux_x86_64.whl
 
 
 
-# 
+## Overview
+
+<img src = './pic/001.png'>
+
+
 
 
 
