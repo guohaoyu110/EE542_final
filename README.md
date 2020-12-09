@@ -80,6 +80,10 @@ We set Variance Threshold to be 0.8.
 
 
 
+
+
+
+
 ## 2) Model ()
 
 
@@ -96,6 +100,10 @@ Our structure of model 1 is as follows:
 Results:
 
 <img src = './picture/011.png'>
+
+
+
+
 
 
 
