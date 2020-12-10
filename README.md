@@ -14,6 +14,7 @@ Our project is based on a Kaggle competition
 	- public: 0.01825
 	- private: 0.01614
 
+
 To run our scripts, several packages need to be installed first. 
 
 It's best to run our scripts directly on kaggle platform because all packages we used are on that platform and those packages can be imported and installed directly through platform without the need of pre-installation on your computer. But still, you can run our scripts on other places as well and you probably need to pre-install these packages on your computer. 
@@ -21,13 +22,17 @@ It's best to run our scripts directly on kaggle platform because all packages we
 
 Here's a list of packages we used: (you can search the name and import into your data folder if you use Kaggle)
 
-1. iterative Statifiers: iterative-stratification/iterative-stratification-master
+1. https://www.kaggle.com/c/lish-moa/data
+2. https://www.kaggle.com/ludovick/pytorch16gpu
+3. https://www.kaggle.com/vikazrajpurohit/tabnet-smoothing
+4. https://www.kaggle.com/vikazrajpurohit/iterative-stratification-tabnet
+5. https://www.kaggle.com/ludovick/tabnetdevelop
+6. https://www.kaggle.com/yasufuminakama/iterative-stratification
+7. https://www.kaggle.com/vikazrajpurohit/moa-5seed
 
-2. pytorch gpu(this is not mendatory, but this can speed up the calculation): 
-pytorch16gpu/torch-1.6.0cu101-cp37-cp37m-linux_x86_64.whl
+Do like this:
 
-3. stratificater for TabNet: iterative-stratification-tabnet/iterative_stratification-0.1.6-py3-none-any.whl
-
+<img src = './picture/014.png'>
 
 
 ## Overview
@@ -92,7 +97,7 @@ We set Variance Threshold to be 0.8.
 
 
 
-## 2) Model ()
+## 2) Models Used
 
 
 ### Model 1
@@ -129,11 +134,34 @@ Results:
 <img src = './picture/013.png'>
 
 
+### Model 3
+
+* 5-layer DNN model
+* 4-layer DNN model
+* 3-layer DNN model
+* 2-layer DNN model 
+* Resnet-type model
+
+
+Do the blending altogether.
+
+Result:
+<img src = './picture/015.png'>
+
+
+## 3) Model Ensemble
 
 
 
+<img src = './picture/016.png'>
+
+Do the model blending with different weights.
 
 
+
+## 4) Final Result
+
+<img src = './picture/017.png'>
 
 
 
