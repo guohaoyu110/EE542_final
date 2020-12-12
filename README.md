@@ -2,7 +2,7 @@
 
 ![comp](./picture/00a.png)
 
-## Usage
+## Usage tutorial
 
 Final project for EE542
 
