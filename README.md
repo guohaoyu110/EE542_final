@@ -6,6 +6,8 @@
 
 Final project for EE542
 
+Youtube video explanation and demonstration:  https://youtu.be/k4rnc9RrlwY
+
 Our project is based on a Kaggle competition
 
 [Mechanisms of Action (MoA) Prediction](https://www.kaggle.com/c/lish-moa/overview) Competition repository
